@@ -12,6 +12,8 @@ const Header: React.FC = ({}) => {
             alt='Vercel logo'
             width={130}
             height={30}
+            className='w-32'
+            priority={true}
           />
         </Link>
         <DesktopNavbar />
