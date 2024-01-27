@@ -8,7 +8,7 @@ const DesktopNavbar: React.FC = ({}) => {
   const pathname = usePathname();
 
   return (
-    <div className='hidden sm:py-0 sm:flex justify-end'>
+    <div className='hidden sm:py-0 md:flex justify-end'>
       <ul className='flex flex-row justify-between items-center py-2'>
         {navItems?.map((item) => {
           const isActive = pathname === item.route;
@@ -16,7 +16,7 @@ const DesktopNavbar: React.FC = ({}) => {
             <li key={item.route}>
               <Link
                 href={item.route}
-                className={`sm:mx-3 md:mx-5 py-3 border-b-2 hover:border-b-2 hover:border-green-900 whitespace-nowrap ${
+                className={`md:mx-4 lg:mx-5 py-3 border-b-2 hover:border-b-2 hover:border-green-900 whitespace-nowrap ${
                   isActive
                     ? 'border-b-2 border-green-900 text-green-900 font-bold'
                     : 'border-transparent font-medium text-gray-600'

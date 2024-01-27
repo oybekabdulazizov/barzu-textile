@@ -5,7 +5,7 @@ import DesktopNavbar from './DesktopNavbar';
 const Header: React.FC = ({}) => {
   return (
     <section className='w-full border-b'>
-      <div className='wrapper py-[25px] sm:py-5 flex items-center justify-between'>
+      <div className='wrapper py-[25px] md:py-5 flex items-center justify-between'>
         <Link href={'/'}>
           <Image
             src='vercelGreen.svg'
