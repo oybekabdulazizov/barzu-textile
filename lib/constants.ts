@@ -52,14 +52,16 @@ export const navItems: Array<{
         title: 'Jobs',
         route: '/obs',
       },
-      {
-        title: 'Contacts',
-        route: '/contact',
-      },
     ],
   },
   {
     title: `Let's Work Together!`,
     route: '/lets-work-together',
+    subItems: [
+      {
+        title: 'Contact Us',
+        route: '/contact-us',
+      },
+    ],
   },
 ];
