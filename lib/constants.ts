@@ -3,6 +3,9 @@ import shirts01 from '../public/images/shirts01.jpg';
 import tailor01 from '../public/images/tailor01.jpg';
 import textileMill from '../public/images/textile-mill.jpg';
 import threads01 from '../public/images/threads01.jpg';
+import couple01 from '../public/images/couple01.jpg';
+
+export { couple01 };
 
 export const navItems: Array<{
   title: string;
