@@ -5,6 +5,7 @@ import textileMill from './textile-mill.jpg';
 import threads01 from './threads01.jpg';
 import couple01 from './couple01.jpg';
 import wardrobe01 from './wardrobe01.jpg';
+import whyus from './whyus.jpg';
 
 export {
   machine01,
@@ -14,4 +15,5 @@ export {
   threads01,
   couple01,
   wardrobe01,
+  whyus,
 };
