@@ -1,3 +1,9 @@
+import machine01 from '../public/images/machine01.jpg';
+import shirts01 from '../public/images/shirts01.jpg';
+import tailor01 from '../public/images/tailor01.jpg';
+import textileMill from '../public/images/textile-mill.jpg';
+import threads01 from '../public/images/threads01.jpg';
+
 export const navItems: Array<{
   title: string;
   route: string;
@@ -63,5 +69,28 @@ export const navItems: Array<{
         route: '/contact-us',
       },
     ],
+  },
+];
+
+export const heroCarouselImages = [
+  {
+    src: machine01,
+    alt: 'machine',
+  },
+  {
+    src: shirts01,
+    alt: 'shirts',
+  },
+  {
+    src: tailor01,
+    alt: 'tailor',
+  },
+  {
+    src: textileMill,
+    alt: 'textile mill',
+  },
+  {
+    src: threads01,
+    alt: 'threads',
   },
 ];
