@@ -1,6 +1,7 @@
 'use client';
 
-import { GeolocateControl, Map, NavigationControl } from 'react-map-gl';
+import { GeolocateControl, Map, Marker, NavigationControl } from 'react-map-gl';
+import { HiLocationMarker } from 'react-icons/hi';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -15,7 +16,7 @@ const MainMap: React.FC = ({}) => {
         initialViewState={{
           latitude: 52.237049,
           longitude: 21.017532,
-          zoom: 10,
+          zoom: 12,
         }}
         style={{
           width: '100%',
@@ -24,6 +25,9 @@ const MainMap: React.FC = ({}) => {
         maxZoom={20}
         minZoom={3}
       >
+        <Marker latitude={52.237049} longitude={21.017532}>
+          <HiLocationMarker className='h-10 w-10 text-red-600 mb-5' />
+        </Marker>
         <GeolocateControl position='top-right' />
         <NavigationControl position='top-right' />
       </Map>
