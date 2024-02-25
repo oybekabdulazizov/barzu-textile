@@ -1,5 +1,5 @@
 import WhyUs from '@/components/root/WhyUs';
-import HeroCarousel from '@/components/shared/HeroCarousel';
+import HeroCarousel from '@/components/root/HeroCarousel';
 
 export default function Home() {
   return (
