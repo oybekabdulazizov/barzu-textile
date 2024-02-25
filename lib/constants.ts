@@ -97,3 +97,27 @@ export const heroCarouselImages = [
     alt: 'threads',
   },
 ];
+
+export const productionBriefItems = [
+  {
+    title: 'Production',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.`,
+  },
+  {
+    title: 'Monitoring',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
+  },
+  {
+    title: 'Packaging',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.`,
+  },
+];
