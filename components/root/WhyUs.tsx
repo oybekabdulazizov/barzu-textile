@@ -1,12 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { couple01 } from '@/lib/constants';
-import Link from 'next/link';
 
 const WhyUs: React.FC = ({}) => {
   return (
-    <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-14 py-10'>
+    <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-10'>
       <Image
         src={couple01}
         alt='model couple'
@@ -14,10 +14,10 @@ const WhyUs: React.FC = ({}) => {
         priority={true}
       />
       <div>
-        <h2 className='font-extrabold text-[30px] text-gray-600 pb-2'>
+        <h2 className='font-extrabold text-[24px] lg:text-[30px] text-gray-600 pb-2'>
           Here's why we stand out:
         </h2>
-        <ul className='list-disc px-6 flex flex-col gap-3 text-gray-700 font-medium'>
+        <ul className='list-disc px-6 flex flex-col gap-2 text-gray-700 font-medium lg:text-[17px]'>
           <li>
             Our knitwear reflects careful workmanship, ensuring top-notch
             quality.
@@ -30,6 +30,11 @@ const WhyUs: React.FC = ({}) => {
           <li>
             We're committed to sustainability, we make environmentally friendly
             knitwear.
+          </li>
+          <li>
+            We closely monitor product quality throughout production. If any
+            issues arise, we swiftly address them to ensure our clients receive
+            flawless products.
           </li>
         </ul>
         <Button className='p-0 mt-12 transition-all'>
