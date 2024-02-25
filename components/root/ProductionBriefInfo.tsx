@@ -19,7 +19,7 @@ const ProductionBriefInfo: React.FC = ({}) => {
           <h2 className='font-extrabold text-[24px] lg:text-[30px] text-gray-600 pb-2'>
             Here's why we stand out:
           </h2>
-          <ul className='list-disc px-6 flex flex-col gap-2 text-gray-700 font-medium lg:text-[17px]'>
+          <ul className='list-disc pl-6 flex flex-col gap-2 text-gray-700 font-medium lg:text-[17px]'>
             <li>
               Our knitwear reflects careful workmanship, ensuring top-notch
               quality.

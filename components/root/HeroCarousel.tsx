@@ -45,9 +45,9 @@ const HeroCarousel: React.FC = ({}) => {
         {heroCarouselImages.map(({ src, alt }, index) => (
           <CarouselItem key={index} className='p-0'>
             <Card className='border-none p-0'>
-              <CardContent className='relative flex items-center min-h-[600px] md:max-h-[900px] p-0'>
+              <CardContent className='relative flex items-center min-h-[600px] min-[3350px]:min-h-[1200px] min-[3350px]:justify-center md:max-h-[900px] p-0'>
                 <Image
-                  className='min-h-[600px] object-cover object-center'
+                  className='min-h-[600px] min-[3350px]:min-h-[1200px] object-cover object-center'
                   src={src}
                   alt={alt}
                   priority
