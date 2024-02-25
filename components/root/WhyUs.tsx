@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
-import { couple01 } from '@/lib/constants';
+import { couple01 } from '@/public/images/images';
 
 const WhyUs: React.FC = ({}) => {
   return (

@@ -1,11 +1,4 @@
-import machine01 from '../public/images/machine01.jpg';
-import shirts01 from '../public/images/shirts01.jpg';
-import tailor01 from '../public/images/tailor01.jpg';
-import textileMill from '../public/images/textile-mill.jpg';
-import threads01 from '../public/images/threads01.jpg';
-import couple01 from '../public/images/couple01.jpg';
-
-export { couple01 };
+import { machine01, shirts01, tailor01, textileMill, threads01 } from "@/public/images/images";
 
 export const navItems: Array<{
   title: string;
