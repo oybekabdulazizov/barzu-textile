@@ -1,3 +1,9 @@
+import HeroCarousel from '@/components/shared/HeroCarousel';
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <HeroCarousel />
+    </main>
+  );
 }
