@@ -16,10 +16,10 @@ const DesktopNavbar: React.FC = ({}) => {
             <li key={item.route}>
               <Link
                 href={item.route}
-                className={`md:mx-4 lg:mx-5 py-3 border-b-2 hover:border-b-2 hover:border-green-900 whitespace-nowrap ${
+                className={`md:mx-4 lg:mx-5 py-3 border-b-2 hover:border-b-2 hover:border-primary-500 hover:text-primary-500 whitespace-nowrap ${
                   isActive
-                    ? 'border-b-2 border-green-900 text-green-900 font-bold'
-                    : 'border-transparent font-medium text-gray-600'
+                    ? 'border-primary-500 text-primary-500 font-extrabold'
+                    : 'border-transparent font-medium text-gray-500'
                 }`}
               >
                 {item.title}
