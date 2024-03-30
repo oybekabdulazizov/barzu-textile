@@ -1,22 +1,14 @@
 import { navItems } from '@/lib/constants';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer: React.FC = ({}) => {
   return (
     <footer className='w-full border-t mt-auto bg-primary-500 py-4'>
       <div className='wrapper py-[25px] sm:py-5 flex flex-row gap-20'>
-        <Link href={'/'} className='h-fit m-2'>
-          <Image
-            src='vercelWhite.svg'
-            alt='Vercel logo'
-            width={115}
-            height={28}
-            className='w-32'
-            priority={true}
-          />
+        <Link href={'/'} className='hidden sm:block h-fit m-2 font-extrabold text-slate-200 text-4xl'>
+          Barzu
         </Link>
-        <div className='flex flex-row sm:justify-around gap-8 flex-wrap md:flex-nowrap text-white w-full'>
+        <div className='flex flex-row sm:justify-around gap-8 flex-wrap md:flex-nowrap text-slate-200 w-full'>
           {navItems?.slice(1).map((item) => {
             return (
               <div key={item.route} className='flex flex-col gap-1 w-fit'>
