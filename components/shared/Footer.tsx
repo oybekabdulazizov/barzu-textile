@@ -1,30 +1,30 @@
-import { navItems } from '@/lib/constants';
-import Link from 'next/link';
+import { navItems } from "@/lib/constants";
+import Link from "next/link";
 
 const Footer: React.FC = ({}) => {
   return (
-    <footer className='w-full border-t mt-auto bg-primary-500 py-4'>
-      <div className='wrapper py-[25px] sm:py-5 flex flex-row gap-20'>
-        <Link href={'/'} className='hidden sm:block h-fit m-2 font-extrabold text-slate-200 text-4xl'>
+    <footer className="w-full border-t mt-auto bg-primary-500 py-4">
+      <div className="wrapper py-[25px] sm:py-5 flex justify-between">
+        <Link
+          href={"/"}
+          className="hidden sm:block h-fit m-2 font-extrabold text-slate-200 text-4xl"
+        >
           Barzu
         </Link>
-        <div className='flex flex-row sm:justify-around gap-8 flex-wrap md:flex-nowrap text-slate-200 w-full'>
-          {navItems?.slice(1).map((item) => {
+        <div className="flex justify-around sm:justify-end flex-row flex-wrap sm:flex-nowrap gap-8 md:gap-20 text-slate-200 w-full">
+          {navItems.slice(1).map((item, idx) => {
             return (
-              <div key={item.route} className='flex flex-col gap-1 w-fit'>
-                <Link
-                  href={item.route}
-                  className='font-medium text-lg hover:underline my-1'
-                >
+              <div key={`${idx} - ${item.title}`} className="flex flex-col gap-1 w-fit">
+                <h1 className="font-medium text-lg hover:underline my-1" key={item.title}>
                   {item.title}
-                </Link>
-                {item.subItems?.map((subitem) => (
+                </h1>
+                {item.routes?.map((route, idx) => (
                   <Link
-                    href={subitem.route}
-                    key={subitem.route}
-                    className='hover:underline w-fit'
+                    href={route.route}
+                    key={`${idx} - ${item.route}`} 
+                    className="hover:underline hover:italic w-fit"
                   >
-                    {subitem.title}
+                    {route.title}
                   </Link>
                 ))}
               </div>
