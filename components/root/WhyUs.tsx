@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Button } from '../ui/button'
-import { couple01 } from '@/public/images/images'
+import { couple01 } from '@/public/assets/images'
 
 const WhyUs: React.FC = ({}) => {
   return (

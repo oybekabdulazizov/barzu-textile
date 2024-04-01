@@ -4,7 +4,7 @@ import {
   tailor01,
   textileMill,
   threads01,
-} from "@/public/images/images";
+} from "@/public/assets/images";
 
 export const navItems: Array<{
   title: string;

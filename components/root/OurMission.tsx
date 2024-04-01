@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '../ui/button';
-import { wardrobe01 } from '@/public/images/images';
+import { wardrobe01 } from '@/public/assets/images';
 
 const OurMission: React.FC = ({}) => {
   return (

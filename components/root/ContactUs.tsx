@@ -16,7 +16,7 @@ import {
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
-import { whyus } from '@/public/images/images';
+import { whyus } from '@/public/assets/images';
 
 const formSchema = z.object({
   name: z
