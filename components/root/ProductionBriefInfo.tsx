@@ -16,10 +16,10 @@ const ProductionBriefInfo: React.FC = ({}) => {
           priority={true}
         />
         <div>
-          <h2 className='font-extrabold text-[24px] lg:text-[30px] text-gray-600 pb-2'>
+          <h2 className='font-extrabold text-2xl lg:text-3xl text-gray-600 pb-2'>
             Here's why we stand out:
           </h2>
-          <ul className='list-disc pl-6 flex flex-col gap-2 text-gray-700 font-medium lg:text-[17px]'>
+          <ul className='list-disc pl-6 flex flex-col gap-2 text-gray-700 font-medium lg:text-lg'>
             <li>
               Our knitwear reflects careful workmanship, ensuring top-notch
               quality.
@@ -42,7 +42,7 @@ const ProductionBriefInfo: React.FC = ({}) => {
           <Button className='p-0 mt-12 transition-all'>
             <Link
               href={'/about-us'}
-              className='px-6 py-2 border-[3px] border-primary-500 transition-all text-[18px] font-bold text-primary-500 hover:bg-primary-500 hover:text-slate-200'
+              className='px-6 py-2 border-2 border-primary-500 transition-all text-lg font-bold text-primary-500 hover:bg-primary-500 hover:text-slate-200'
             >
               More details
             </Link>
@@ -54,7 +54,7 @@ const ProductionBriefInfo: React.FC = ({}) => {
         <div className='wrapper grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-16'>
           {productionBriefItems.map(({ title, description }, idx) => (
             <div className='flex flex-col gap-2 px-20 md:px-0' key={idx}>
-              <h2 className='text-center text-[30px] font-[800] tracking-wide'>
+              <h2 className='text-center text-3xl font-extrabold tracking-wide'>
                 {title}
               </h2>
               <p className='text-center'>{description}</p>
@@ -64,7 +64,7 @@ const ProductionBriefInfo: React.FC = ({}) => {
         <Button className='p-0 mt-12 transition-all'>
           <Link
             href={'/about-us'}
-            className='px-6 py-2 border-[3px] border-primary-500 transition-all text-[18px] font-bold text-primary-500 hover:bg-primary-500 hover:text-secondary-500'
+            className='px-6 py-2 border-2 border-primary-500 transition-all text-lg font-bold text-primary-500 hover:bg-primary-500 hover:text-secondary-500'
           >
             More details
           </Link>

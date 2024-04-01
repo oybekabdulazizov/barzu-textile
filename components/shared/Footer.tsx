@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer: React.FC = ({}) => {
   return (
     <footer className="w-full border-t mt-auto bg-primary-500 py-4">
-      <div className="wrapper py-[25px] sm:py-5 flex justify-between">
+      <div className="wrapper py-5 flex justify-between">
         <Link
           href={"/"}
           className="hidden sm:block h-fit m-2 font-extrabold text-slate-200 text-4xl"
