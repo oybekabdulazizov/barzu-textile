@@ -1,5 +1,6 @@
-import { navItems } from "@/lib/constants";
 import Link from "next/link";
+
+import { navItems } from "@/lib/constants";
 
 const Footer: React.FC = ({}) => {
   return (

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+
 import DesktopNavbar from "./DesktopNavbar";
 
 const Header: React.FC = ({}) => {

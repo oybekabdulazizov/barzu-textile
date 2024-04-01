@@ -1,10 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import { whyus } from '@/public/images/images';
 import * as z from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+
 import {
   Form,
   FormControl,
@@ -16,12 +16,7 @@ import {
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
-
-type Data = {
-  name: string;
-  email: string;
-  message: string;
-};
+import { whyus } from '@/public/images/images';
 
 const formSchema = z.object({
   name: z

@@ -1,10 +1,11 @@
 import React from 'react'
-import { couple01 } from '@/public/images/images'
 import Image from 'next/image'
-import { Button } from '../ui/button'
 import Link from 'next/link'
 
-const WhyUs: React.FC = () => {
+import { Button } from '../ui/button'
+import { couple01 } from '@/public/images/images'
+
+const WhyUs: React.FC = ({}) => {
   return (
     <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'>
         <Image
