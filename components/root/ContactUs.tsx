@@ -27,7 +27,7 @@ const formSchema = z.object({
   message: z
     .string({})
     .min(100, 'Message must be at least 100 characters')
-    .max(500, 'Message cannot exceed 50 characters'),
+    .max(500, 'Message cannot exceed 500 characters'),
 });
 
 const ContactUs: React.FC = ({}) => {
@@ -46,7 +46,7 @@ const ContactUs: React.FC = ({}) => {
   });
 
   return (
-    <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'>
+    <div id="contact-us" className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'>
       <div className='flex flex-col gap-4 w-[500px]'>
         <h2 className='font-extrabold text-4xl text-primary-500 pb-2'>
           Leave us a message

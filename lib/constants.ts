@@ -34,12 +34,12 @@ export const navItems: Array<{
     ],
   },
   {
-    title: "About Us",
-    route: "/about-us",
+    title: "Company",
+    route: "#header",
     routes: [
       {
-        title: "Company",
-        route: "/about-us#company",
+        title: "About us",
+        route: "/about-us",
       },
       {
         title: "Our Story",
@@ -50,18 +50,14 @@ export const navItems: Array<{
         route: "/about-us#our-mission",
       },
       {
-        title: "Clients",
-        route: "/clients",
-      },
-      {
-        title: "Jobs",
-        route: "/obs",
+        title: "Our Clients",
+        route: "/about-us#out-clients",
       },
     ],
   },
   {
     title: `Let's Work Together!`,
-    route: "/contact-us",
+    route: "#contact-us",
     routes: [
       {
         title: "Director",
