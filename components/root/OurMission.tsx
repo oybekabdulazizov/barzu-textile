@@ -29,7 +29,7 @@ const OurMission: React.FC = ({}) => {
           </Button>
         </div>
       </div>
-      <div className='min-h-[500px] md:max-h-[500px]'>
+      <div className='min-h-[500px] md:max-h-[500px] xl:flex xl:justify-center'>
         <Image
           src={wardrobe01}
           alt='wardrobe'
