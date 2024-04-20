@@ -45,8 +45,15 @@ const ContactUs: React.FC = ({}) => {
     },
   });
 
+  const camelCase = (str: string) => {
+    return str.slice(0, 1).toLocaleUpperCase() + str.slice(1);
+  };
+
   return (
-    <div id="contact-us" className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'>
+    <div
+      id='contact-us'
+      className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'
+    >
       <div className='flex flex-col gap-4 w-[500px]'>
         <h2 className='font-extrabold text-4xl text-primary-500 pb-2'>
           Leave us a message
@@ -62,7 +69,9 @@ const ContactUs: React.FC = ({}) => {
                 name='name'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='text-md'>Username</FormLabel>
+                    <FormLabel className='text-md'>
+                      {camelCase(field.name)}
+                    </FormLabel>
                     <FormControl>
                       <Input
                         placeholder='John Doe'
@@ -79,9 +88,15 @@ const ContactUs: React.FC = ({}) => {
                 name='email'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='text-md'>Email</FormLabel>
+                    <FormLabel className='text-md'>
+                      {camelCase(field.name)}
+                    </FormLabel>
                     <FormControl>
-                      <Input placeholder='john.doe@mail.com' {...field} className='text-md border-gray-200 placeholder:text-gray-300'/>
+                      <Input
+                        placeholder='john.doe@mail.com'
+                        {...field}
+                        className='text-md border-gray-200 placeholder:text-gray-300'
+                      />
                     </FormControl>
                     <FormMessage className='text-red-500' />
                   </FormItem>
@@ -92,15 +107,28 @@ const ContactUs: React.FC = ({}) => {
                 name='message'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className='text-md'>Username</FormLabel>
+                    <FormLabel className='text-md'>
+                      {camelCase(field.name)}
+                    </FormLabel>
                     <FormControl>
-                      <Textarea rows={6} placeholder='We would like to work with you...' {...field} className='text-md border-gray-200 placeholder:text-gray-300' />
+                      <Textarea
+                        rows={6}
+                        placeholder='We would like to work with you...'
+                        {...field}
+                        className='text-md border-gray-200 placeholder:text-gray-300'
+                      />
                     </FormControl>
                     <FormMessage className='text-red-500' />
                   </FormItem>
                 )}
               />
-              <Button type='submit' size={'lg'} className='text-lg bg-green-500 hover:bg-green-600 w-full text-white'>Submit</Button>
+              <Button
+                type='submit'
+                size={'lg'}
+                className='text-lg bg-green-500 hover:bg-green-600 w-full text-white'
+              >
+                Submit
+              </Button>
             </form>
           </Form>
         </div>
