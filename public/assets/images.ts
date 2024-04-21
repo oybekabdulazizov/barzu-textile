@@ -6,6 +6,11 @@ import threads01 from './threads01.jpg';
 import couple01 from './couple01.jpg';
 import wardrobe01 from './wardrobe01.jpg';
 import whyus from './whyus.jpg';
+import family01 from './family01.jpg';
+import man01 from './male01.jpg';
+import woman01 from './female01.jpg';
+import boy01 from './boy01.jpg';
+import girl01 from './girl01.jpg'
 
 export {
   machine01,
@@ -16,4 +21,9 @@ export {
   couple01,
   wardrobe01,
   whyus,
+  family01,
+  man01,
+  woman01,
+  boy01,
+  girl01
 };

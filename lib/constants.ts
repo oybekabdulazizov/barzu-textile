@@ -1,10 +1,15 @@
 import {
+  boy01,
+  woman01,
+  girl01,
   machine01,
+  man01,
   shirts01,
   tailor01,
   textileMill,
   threads01,
 } from "@/public/assets/images";
+import { StaticImageData } from "next/image";
 
 export const navItems: Array<{
   title: string;
@@ -20,17 +25,20 @@ export const navItems: Array<{
     route: "/products",
     routes: [
       {
-        title: "Male",
-        route: "/products/male",
+        title: "Man",
+        route: "/products/man",
       },
       {
-        title: "Female",
-        route: "/products/female",
+        title: "Woman",
+        route: "/products/woman",
       },
       {
-        title: "Kids",
-        route: "/products/kids",
-      },
+        title: "Boy",
+        route: "/products/boy",
+      }, {
+        title: "Girl", 
+        route: "/products/girl"  
+      }
     ],
   },
   {
@@ -121,3 +129,30 @@ export const productionBriefItems = [
               ipsum dolor sit amet, consectetur adipiscing elit.`,
   },
 ];
+
+export const products: Array<{
+  title: string, 
+  imageUrl: StaticImageData, 
+  route: string
+}> = [
+  {
+    title: "Man", 
+    imageUrl: man01, 
+    route: "/products/man"
+  }, 
+  {
+    title: "Woman", 
+    imageUrl: woman01, 
+    route: "/products/woman" 
+  }, 
+  {
+    title: "Boy", 
+    imageUrl: boy01, 
+    route: "/products/boy"
+  }, 
+  {
+    title: "Girl", 
+    imageUrl: girl01, 
+    route: "/products/girl"
+  }
+]
