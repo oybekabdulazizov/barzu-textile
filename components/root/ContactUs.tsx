@@ -52,7 +52,7 @@ const ContactUs: React.FC = ({}) => {
   return (
     <div
       id='contact-us'
-      className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'
+      className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14'
     >
       <div className='flex flex-col gap-4 w-full sm:w-[400px] md:w-[500px] transition-all'>
         <h2 className='font-extrabold text-2xl md:text-3xl lg:text-4xl text-primary-500 pb-2'>

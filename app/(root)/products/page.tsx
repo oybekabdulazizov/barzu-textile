@@ -6,7 +6,7 @@ import { products } from '@/lib/constants';
 export default function Products() {
   return (
     <div className='w-full'>
-      <div className='bg-primary-500 w-full h-full flex items-center py-20'>
+      <div className='bg-primary-500 w-full h-full flex items-center'>
         <div className='wrapper flex flex-col gap-2'>
           <h1 className='text-slate-200 text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold'>
             Our Products
@@ -16,8 +16,8 @@ export default function Products() {
           </p>
         </div>
       </div>
-      <div className='py-20'>
-        <div className='wrapper flex gap-6 md:gap-10 flex-wrap md:flex-nowrap justify-around md:justify-between'>
+      <div className='wrapper'>
+        <div className='flex gap-6 md:gap-10 flex-wrap md:flex-nowrap justify-around md:justify-between'>
           {products.map((product) => (
             <Link
               href={product.route}

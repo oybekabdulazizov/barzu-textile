@@ -5,7 +5,7 @@ import DesktopNavbar from './DesktopNavbar';
 const Header: React.FC = ({}) => {
   return (
     <section className='w-full border-b'>
-      <div className='wrapper py-4 flex items-center justify-between'>
+      <div className='wrapper !py-4 flex items-center justify-between'>
         <Link
           href={'/'}
           className='hidden sm:block h-fit m-2 font-extrabold text-primary-500 text-4xl'

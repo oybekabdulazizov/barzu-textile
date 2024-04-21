@@ -7,7 +7,7 @@ import { couple01 } from '@/public/assets/images';
 
 const WhyUs: React.FC = ({}) => {
   return (
-    <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'>
+    <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14'>
       <Image
         src={couple01}
         alt='model couple'
@@ -38,7 +38,7 @@ const WhyUs: React.FC = ({}) => {
             flawless products.
           </li>
         </ul>
-        <Button className='p-0 mt-12 transition-all'>
+        <Button className='p-0 mt-8 sm:mt-12 transition-all'>
           <Link
             href={'/about-us'}
             className='px-6 py-2 border-2 border-primary-500 transition-all text-lg font-bold text-primary-500 hover:bg-primary-500 hover:text-slate-200'

@@ -32,6 +32,6 @@ body {
 
 @layer utilities {
   .wrapper {
-    @apply max-w-6xl lg:mx-auto w-full xl:px-0 md:px-10 px-8;
+    @apply max-w-6xl lg:mx-auto w-full py-10 sm:py-20 xl:px-0 md:px-10 px-8;
   }
 }
