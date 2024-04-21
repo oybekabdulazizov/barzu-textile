@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 import {
   boy01,
   woman01,
@@ -9,7 +11,30 @@ import {
   textileMill,
   threads01,
 } from '@/public/assets/images';
-import { StaticImageData } from 'next/image';
+import {
+  boyBlackSweater01,
+  boyBlackSweater02,
+  boyBlackSweater03,
+  boyGrayHoodie01,
+  boyGrayHoodie02,
+  boyGrayHoodie03,
+  boyGrayHoodie04,
+  boyGrayTshirt01,
+  boyGrayTshirt02,
+  boyGreenHoodie01,
+  boyGreenHoodie02,
+  boyGreenHoodie03,
+  boyOrangeHoodie01,
+  boyOrangeHoodie02,
+  boyOrangeHoodie03,
+  boyOrangeTshirt01,
+  boyOrangeTshirt02,
+  boyWhiteHoodie01,
+  boyWhiteHoodie02,
+  boyWhiteHoodie03,
+  boyWhiteTshirt01,
+  boyWhiteTshirt02,
+} from '@/public/assets/products/boy';
 
 export const navItems: Array<{
   title: string;
@@ -155,5 +180,75 @@ export const products: Array<{
     title: 'Girl',
     imageUrl: girl01,
     route: '/products/girl',
+  },
+];
+
+export const productsBoy: Array<{
+  title: string;
+  color: string;
+  material: string;
+  images: Array<StaticImageData>;
+  canBeCustomized: boolean;
+}> = [
+  {
+    title: 'Sweater',
+    color: 'Black',
+    material: 'Cotton',
+    images: [boyBlackSweater01, boyBlackSweater02, boyBlackSweater03],
+    canBeCustomized: true,
+  },
+  {
+    title: 'Hoodie',
+    color: 'Gray',
+    material: 'Cotton',
+    images: [
+      boyGrayHoodie01,
+      boyGrayHoodie02,
+      boyGrayHoodie03,
+      boyGrayHoodie04,
+    ],
+    canBeCustomized: true,
+  },
+  {
+    title: 'T-shirt',
+    color: 'Gray',
+    material: 'Cotton',
+    images: [boyGrayTshirt01, boyGrayTshirt02],
+    canBeCustomized: true,
+  },
+  {
+    title: 'Hoodie',
+    color: 'Green',
+    material: 'Cotton',
+    images: [boyGreenHoodie01, boyGreenHoodie02, boyGreenHoodie03],
+    canBeCustomized: true,
+  },
+  {
+    title: 'Hoodie',
+    color: 'Orange',
+    material: 'Cotton',
+    images: [boyOrangeHoodie01, boyOrangeHoodie02, boyOrangeHoodie03],
+    canBeCustomized: true,
+  },
+  {
+    title: 'T-shirt',
+    color: 'Orange',
+    material: 'Cotton',
+    images: [boyOrangeTshirt01, boyOrangeTshirt02],
+    canBeCustomized: true,
+  },
+  {
+    title: 'Hoodie',
+    color: 'White',
+    material: 'Cotton',
+    images: [boyWhiteHoodie01, boyWhiteHoodie02, boyWhiteHoodie03],
+    canBeCustomized: true,
+  },
+  {
+    title: 'T-shirt',
+    color: 'White',
+    material: 'Cotton',
+    images: [boyWhiteTshirt01, boyWhiteTshirt02],
+    canBeCustomized: true,
   },
 ];
