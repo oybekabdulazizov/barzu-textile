@@ -8,8 +8,8 @@ import {
   tailor01,
   textileMill,
   threads01,
-} from "@/public/assets/images";
-import { StaticImageData } from "next/image";
+} from '@/public/assets/images';
+import { StaticImageData } from 'next/image';
 
 export const navItems: Array<{
   title: string;
@@ -19,65 +19,66 @@ export const navItems: Array<{
     route: string;
   }>;
 }> = [
-  { title: "Home", route: "/" },
+  { title: 'Home', route: '/' },
   {
-    title: "Products",
-    route: "/products",
+    title: 'Products',
+    route: '/products',
     routes: [
       {
-        title: "Man",
-        route: "/products/man",
+        title: 'Man',
+        route: '/products/man',
       },
       {
-        title: "Woman",
-        route: "/products/woman",
+        title: 'Woman',
+        route: '/products/woman',
       },
       {
-        title: "Boy",
-        route: "/products/boy",
-      }, {
-        title: "Girl", 
-        route: "/products/girl"  
-      }
+        title: 'Boy',
+        route: '/products/boy',
+      },
+      {
+        title: 'Girl',
+        route: '/products/girl',
+      },
     ],
   },
   {
-    title: "Company",
-    route: "#header",
+    title: 'Company',
+    route: '#header',
     routes: [
       {
-        title: "About us",
-        route: "/about-us",
+        title: 'About us',
+        route: '/about-us',
       },
       {
-        title: "Our Story",
-        route: "/about-us#our-story",
+        title: 'Our Story',
+        route: '/about-us#our-story',
       },
       {
-        title: "Our Mission",
-        route: "/about-us#our-mission",
+        title: 'Our Mission',
+        route: '/about-us#our-mission',
       },
       {
-        title: "Our Clients",
-        route: "/about-us#out-clients",
+        title: 'Our Clients',
+        route: '/about-us#out-clients',
       },
     ],
   },
   {
     title: `Let's Work Together!`,
-    route: "#contact-us",
+    route: '#contact-us',
     routes: [
       {
-        title: "Director",
-        route: "tel:+998917775555",
+        title: 'Director',
+        route: 'tel:+998917775555',
       },
       {
-        title: "Sales Manager",
-        route: "tel:+998888255550",
+        title: 'Sales Manager',
+        route: 'tel:+998888255550',
       },
       {
-        title: "WhatsApp / Telegram",
-        route: "tel:+998888255550",
+        title: 'WhatsApp / Telegram',
+        route: 'tel:+998888255550',
       },
     ],
   },
@@ -86,36 +87,36 @@ export const navItems: Array<{
 export const heroCarouselImages = [
   {
     src: machine01,
-    alt: "machine",
+    alt: 'machine',
   },
   {
     src: shirts01,
-    alt: "shirts",
+    alt: 'shirts',
   },
   {
     src: tailor01,
-    alt: "tailor",
+    alt: 'tailor',
   },
   {
     src: textileMill,
-    alt: "textile mill",
+    alt: 'textile mill',
   },
   {
     src: threads01,
-    alt: "threads",
+    alt: 'threads',
   },
 ];
 
 export const productionBriefItems = [
   {
-    title: "Production",
+    title: 'Production',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
-    title: "Monitoring",
+    title: 'Monitoring',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -123,7 +124,7 @@ export const productionBriefItems = [
               Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
   },
   {
-    title: "Packaging",
+    title: 'Packaging',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit.`,
@@ -131,28 +132,28 @@ export const productionBriefItems = [
 ];
 
 export const products: Array<{
-  title: string, 
-  imageUrl: StaticImageData, 
-  route: string
+  title: string;
+  imageUrl: StaticImageData;
+  route: string;
 }> = [
   {
-    title: "Man", 
-    imageUrl: man01, 
-    route: "/products/man"
-  }, 
+    title: 'Man',
+    imageUrl: man01,
+    route: '/products/man',
+  },
   {
-    title: "Woman", 
-    imageUrl: woman01, 
-    route: "/products/woman" 
-  }, 
+    title: 'Woman',
+    imageUrl: woman01,
+    route: '/products/woman',
+  },
   {
-    title: "Boy", 
-    imageUrl: boy01, 
-    route: "/products/boy"
-  }, 
+    title: 'Boy',
+    imageUrl: boy01,
+    route: '/products/boy',
+  },
   {
-    title: "Girl", 
-    imageUrl: girl01, 
-    route: "/products/girl"
-  }
-]
+    title: 'Girl',
+    imageUrl: girl01,
+    route: '/products/girl',
+  },
+];

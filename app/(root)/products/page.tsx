@@ -1,6 +1,7 @@
-import { products } from '@/lib/constants';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { products } from '@/lib/constants';
 
 export default function Products() {
   return (
