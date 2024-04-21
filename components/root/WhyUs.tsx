@@ -11,14 +11,14 @@ const WhyUs: React.FC = ({}) => {
       <Image
         src={couple01}
         alt='model couple'
-        className='p-0 w-full md:w-[300px] lg:w-[400px] transition-all'
+        className='hidden md:inline p-0 w-full md:w-[300px] lg:w-[400px] transition-all'
         priority={true}
       />
       <div>
-        <h2 className='font-extrabold text-2xl lg:text-3xl text-gray-600 pb-2'>
+        <h2 className='font-extrabold text-2xl lg:text-3xl text-primary-500 pb-2'>
           Here's why we stand out:
         </h2>
-        <ul className='list-disc pl-6 flex flex-col gap-2 text-gray-700 font-medium lg:text-lg'>
+        <ul className='list-disc pl-6 flex flex-col gap-2 text-primary-500 font-medium lg:text-lg'>
           <li>
             Our knitwear reflects careful workmanship, ensuring top-notch
             quality.
