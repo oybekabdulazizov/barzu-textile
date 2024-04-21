@@ -29,7 +29,7 @@ const DesktopNavbar: React.FC = ({}) => {
                     <Link
                       href={item.route}
                       key={item.title}
-                      className={`md:mx-4 lg:mx-5 py-3 border-b-2 hover:border-b-2 hover:border-primary-500 hover:text-primary-500 whitespace-nowrap ${
+                      className={`md:mx-4 lg:mx-5 text-base py-3 border-b-2 hover:border-b-2 hover:border-primary-500 hover:text-primary-500 whitespace-nowrap ${
                         isActive
                           ? 'border-primary-500 text-primary-500 font-extrabold'
                           : 'border-transparent font-medium text-gray-500'
@@ -43,7 +43,7 @@ const DesktopNavbar: React.FC = ({}) => {
                         <Link
                           href={item.route}
                           key={item.title}
-                          className={`py-3 border-b-2 hover:text-primary-500 whitespace-nowrap ${
+                          className={`py-3 text-base border-b-2 hover:text-primary-500 whitespace-nowrap ${
                             isActive
                               ? 'border-primary-500 text-primary-500 font-extrabold'
                               : 'border-transparent font-medium text-gray-500'
@@ -53,16 +53,14 @@ const DesktopNavbar: React.FC = ({}) => {
                         </Link>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent
-                        className='bg-white border'
-                        style={{ borderRadius: '6px' }}
+                        className='bg-white border rounded-md'
                       >
                         <div className='text-primary-500 flex flex-col gap-2 p-3 w-56 rounded-md'>
                           {item.routes?.map((route, idx) => (
                             <Link
                               href={route.route}
                               key={`${idx} - ${route.title}`}
-                              className='py-2 px-3 w-full hover:bg-gray-100'
-                              style={{ borderRadius: '6px' }}
+                              className='py-2 px-3 w-full hover:bg-gray-100 rounded-md'
                             >
                               {route.title}
                             </Link>
