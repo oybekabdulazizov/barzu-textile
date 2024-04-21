@@ -16,7 +16,7 @@ import {
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
-import { whyus } from '@/public/assets/images';
+import { contactus } from '@/public/assets/images';
 
 const formSchema = z.object({
   name: z
@@ -54,15 +54,15 @@ const ContactUs: React.FC = ({}) => {
       id='contact-us'
       className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14 py-20'
     >
-      <div className='flex flex-col gap-4 w-[500px]'>
-        <h2 className='font-extrabold text-4xl text-primary-500 pb-2'>
+      <div className='flex flex-col gap-4 w-full sm:w-[400px] lg:w-[500px] transition-all'>
+        <h2 className='font-extrabold text-2xl md:text-3xl lg:text-4xl text-primary-500 pb-2'>
           Leave us a message
         </h2>
         <div className='w-full'>
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className='space-y-6 w-full'
+              className='space-y-6'
             >
               <FormField
                 control={form.control}
@@ -134,8 +134,8 @@ const ContactUs: React.FC = ({}) => {
         </div>
       </div>
       <Image
-        src={whyus}
-        alt='model couple'
+        src={contactus}
+        alt=''
         className='hidden md:inline w-full md:w-[300px] lg:w-[400px] transition-all'
         priority={true}
       />

@@ -5,7 +5,7 @@ import textileMill from './textile-mill.jpg';
 import threads01 from './threads01.jpg';
 import couple01 from './couple01.jpg';
 import wardrobe01 from './wardrobe01.jpg';
-import whyus from './whyus.jpg';
+import contactus from './contactus.jpg';
 import family01 from './family01.jpg';
 import man01 from './male01.jpg';
 import woman01 from './female01.jpg';
@@ -20,7 +20,7 @@ export {
   threads01,
   couple01,
   wardrobe01,
-  whyus,
+  contactus,
   family01,
   man01,
   woman01,
