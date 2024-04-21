@@ -30,7 +30,9 @@ export default function Products() {
                 className='rounded-md w-56 sm:w-64 lg:w-52 xl:w-64 border-b-[1px] border-primary-500'
                 priority
               />
-              <h1 className='p-2 lg:p-4 lg:text-lg'>{product.title}</h1>
+              <h1 className='p-2 lg:py-4 lg:text-lg text-primary-500'>
+                {product.title}
+              </h1>
             </Link>
           ))}
         </div>
