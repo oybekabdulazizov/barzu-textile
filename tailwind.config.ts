@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config = {
-  imporant: true, 
+  imporant: true,
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -26,7 +26,9 @@ const config = {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         'primary-500': '#3E4533',
-        'secondary-500': '#d1e7a7',
+        'secondary-500': '#D1E7A7',
+        'man-boy': '#E6E8E1',
+        'woman-girl': '#F6E6E6',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
