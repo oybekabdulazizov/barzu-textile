@@ -15,26 +15,30 @@ type Props = {
   title: string;
   description: string;
   productsData: Array<ProductType>;
+  model: 'man' | 'woman' | 'boy' | 'girl';
 };
 
 export default function ProductContainer({
   title,
   description,
   productsData,
+  model,
 }: Props) {
+  const pageBodyBg =
+    model === 'man' || model === 'boy' ? 'bg-man-boy' : 'bg-woman-girl';
   return (
     <>
       <div className='bg-primary-500 w-full h-full flex items-center'>
         <div className='wrapper flex flex-col gap-2'>
-          <h1 className='text-slate-200 text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-bold'>
+          <h1 className='text-slate-200 text-lg sm:text-2xl md:text-2xl 2xl:text-3xl font-bold'>
             {title.toUpperCase()}
           </h1>
-          <p className='text-slate-200 text-md md:text-xl 2xl:text-2xl font-medium tracking-wide'>
+          <p className='text-slate-200 text-sm md:text-md 2xl:text-lg font-medium tracking-wide'>
             {description.toUpperCase()}
           </p>
         </div>
       </div>
-      <div className='bg-man-boy'>
+      <div className={pageBodyBg}>
         <div className=' wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-6'>
           {productsData.map((product) => {
             const { title, color, material, images } = product;

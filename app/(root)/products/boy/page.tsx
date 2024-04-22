@@ -12,6 +12,7 @@ export default function page() {
       title={title}
       description={description}
       productsData={productsBoy}
+      model='boy'
     />
   );
 }

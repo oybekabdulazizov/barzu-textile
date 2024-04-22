@@ -12,6 +12,7 @@ export default function Girl() {
       title={title}
       description={description}
       productsData={productsGirl}
+      model='girl'
     />
   );
 }
