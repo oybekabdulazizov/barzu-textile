@@ -183,13 +183,15 @@ export const products: Array<{
   },
 ];
 
-export const productsBoy: Array<{
+export type ProductType = {
   title: string;
   color: string;
   material: string;
   images: Array<StaticImageData>;
   canBeCustomized: boolean;
-}> = [
+};
+
+export const productsBoy: Array<ProductType> = [
   {
     title: 'Sweater',
     color: 'Black',
