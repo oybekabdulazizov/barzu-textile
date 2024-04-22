@@ -35,6 +35,23 @@ import {
   boyWhiteTshirt01,
   boyWhiteTshirt02,
 } from '@/public/assets/products/boy';
+import {
+  girlBlackWhite01,
+  girlBlackWhite02,
+  girlBlueTshirt01,
+  girlBlueTshirt02,
+  girlBlueTshirt03,
+  girlOrangeShirt01,
+  girlOrangeShirt02,
+  girlOrangeSweater01,
+  girlOrangeSweater02,
+  girlOrangeSweater03,
+  girlPinkBlouse01,
+  girlPinkBlouse02,
+  girlRedBlouse01,
+  girlRedBlouse02,
+  girlRedBlouse03,
+} from '@/public/assets/products/girl';
 
 export const navItems: Array<{
   title: string;
@@ -185,7 +202,7 @@ export const products: Array<{
 
 export type ProductType = {
   title: string;
-  color: string;
+  color?: string;
   material: string;
   images: Array<StaticImageData>;
   canBeCustomized: boolean;
@@ -251,6 +268,50 @@ export const productsBoy: Array<ProductType> = [
     color: 'White',
     material: 'Cotton',
     images: [boyWhiteTshirt01, boyWhiteTshirt02],
+    canBeCustomized: true,
+  },
+];
+
+export const productsGirl: Array<ProductType> = [
+  {
+    title: 'White Sweater with black skirt',
+    material: 'Cotton',
+    images: [girlBlackWhite01, girlBlackWhite02],
+    canBeCustomized: true,
+  },
+  {
+    title: 'T-shirt',
+    color: 'Blue',
+    material: 'Cotton',
+    images: [girlBlueTshirt01, girlBlueTshirt02, girlBlueTshirt03],
+    canBeCustomized: true,
+  },
+  {
+    title: 'T-shirt',
+    color: 'Orange',
+    material: 'Cotton',
+    images: [girlOrangeShirt01, girlOrangeShirt02],
+    canBeCustomized: true,
+  },
+  {
+    title: 'Sweater',
+    color: 'Orange',
+    material: 'Cotton',
+    images: [girlOrangeSweater01, girlOrangeSweater02, girlOrangeSweater03],
+    canBeCustomized: true,
+  },
+  {
+    title: 'Blouse',
+    color: 'Pink',
+    material: 'Cotton',
+    images: [girlPinkBlouse01, girlPinkBlouse02],
+    canBeCustomized: true,
+  },
+  {
+    title: 'Blouse',
+    color: 'Red',
+    material: 'Cotton',
+    images: [girlRedBlouse01, girlRedBlouse02, girlRedBlouse03],
     canBeCustomized: true,
   },
 ];
