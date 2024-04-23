@@ -94,6 +94,7 @@ export default function MobileNavbar() {
                       <Link
                         href={navItem.route}
                         className='text-lg py-2 hover:underline hover:italic'
+                        onClick={toggleSidebar}
                       >
                         {navItem.title}
                       </Link>
@@ -104,6 +105,7 @@ export default function MobileNavbar() {
                         <Link
                           href={navItem.route}
                           className='text-lg py-2 hover:underline hover:italic'
+                          onClick={toggleSidebar}
                         >
                           {navItem.title}
                         </Link>
@@ -116,6 +118,7 @@ export default function MobileNavbar() {
                           <Link
                             href={route.route}
                             className='text-lg py-2 hover:underline hover:italic'
+                            onClick={toggleSidebar}
                           >
                             {route.title}
                           </Link>
