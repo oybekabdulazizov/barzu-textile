@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import DesktopNavbar from './DesktopNavbar';
-import { Menu, MenuSquare } from 'lucide-react';
+import MobileNavbar from './MobileNavbar';
 
 const Header: React.FC = ({}) => {
   return (
@@ -14,7 +14,7 @@ const Header: React.FC = ({}) => {
           Barzu
         </Link>
         <DesktopNavbar />
-        <Menu className='stroke-primary-500' />
+        <MobileNavbar />
       </div>
     </section>
   );
