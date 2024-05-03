@@ -173,11 +173,13 @@ export const productionBriefItems = [
   },
 ];
 
-export const products: Array<{
+export type ProductPageType = {
   title: string;
   imageUrl: StaticImageData;
   route: string;
-}> = [
+};
+
+export const products: Array<ProductPageType> = [
   {
     title: 'Man',
     imageUrl: man01,

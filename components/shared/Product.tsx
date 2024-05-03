@@ -9,37 +9,80 @@ import {
   CarouselItem,
 } from '../ui/carousel';
 import { Card, CardContent } from '../ui/card';
-import { ProductType } from '@/lib/constants';
+import { ProductPageType, ProductType } from '@/lib/constants';
+import Link from 'next/link';
 
-type Props = {
+type ProductPageProp = {
+  productsData: Array<ProductPageType>;
+};
+
+function ProductPage({ productsData }: ProductPageProp) {
+  return (
+    <div className='w-full'>
+      <div className='bg-primary-500 w-full h-full flex items-center'>
+        <div className='wrapper flex flex-col gap-2 uppercase'>
+          <h1 className='text-slate-200 text-lg sm:text-2xl md:text-2xl 2xl:text-3xl font-bold'>
+            Our products
+          </h1>
+          <p className='text-slate-200 text-sm md:text-md 2xl:text-lg font-medium tracking-wide'>
+            We have products for men, women, and kids. Check them out!
+          </p>
+        </div>
+      </div>
+      <div className='wrapper'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-6'>
+          {productsData.map((product) => (
+            <Link
+              href={product.route}
+              key={`${product.title}-${product.route}`}
+              className='group mx-auto w-60 sm:w-full'
+            >
+              <Image
+                src={product.imageUrl}
+                alt={`${product.title} - image`}
+                className='group-hover:bg-white group-hover:opacity-70'
+                priority
+              />
+              <h1 className='text-xs sm:text-sm uppercase py-2 px-1 text-primary-500'>
+                {product.title}
+              </h1>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type ProductContainerProps = {
   title: string;
   description: string;
   productsData: Array<ProductType>;
   model: 'man' | 'woman' | 'boy' | 'girl';
 };
 
-export default function ProductContainer({
+function ProductContainer({
   title,
   description,
   productsData,
   model,
-}: Props) {
+}: ProductContainerProps) {
   const pageBodyBg =
     model === 'man' || model === 'boy' ? 'bg-man-boy' : 'bg-woman-girl';
   return (
     <>
       <div className='bg-primary-500 w-full h-full flex items-center'>
-        <div className='wrapper flex flex-col gap-2'>
+        <div className='wrapper flex flex-col gap-2 uppercase'>
           <h1 className='text-slate-200 text-lg sm:text-2xl md:text-2xl 2xl:text-3xl font-bold'>
-            {title.toUpperCase()}
+            {title}
           </h1>
           <p className='text-slate-200 text-sm md:text-md 2xl:text-lg font-medium tracking-wide'>
-            {description.toUpperCase()}
+            {description}
           </p>
         </div>
       </div>
       <div className={pageBodyBg}>
-        <div className=' wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-6'>
+        <div className='wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-6'>
           {productsData.map((product) => {
             const { title, color, material, images } = product;
             return (
@@ -73,7 +116,7 @@ export default function ProductContainer({
                       variant='secondary'
                     />
                   </Carousel>
-                  <h1 className='text-xs uppercase py-2 px-1'>
+                  <h1 className='text-xs sm:text-sm uppercase py-2 px-1 text-primary-500'>
                     {color} {title} made of {material}
                   </h1>
                 </div>
@@ -85,3 +128,5 @@ export default function ProductContainer({
     </>
   );
 }
+
+export { ProductPage, ProductContainer };

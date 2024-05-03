@@ -1,4 +1,4 @@
-import ProductContainer from '@/components/shared/ProductContainer';
+import { ProductContainer } from '@/components/shared/Product';
 import { productsBoy } from '@/lib/constants';
 
 export default function page() {
