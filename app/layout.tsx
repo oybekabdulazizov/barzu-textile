@@ -5,7 +5,7 @@ import Header from '@/components/shared/Header';
 import Footer from '@/components/shared/Footer';
 import './globals.css';
 
-const dmSans = DM_Sans({ subsets: ['latin'] })
+const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Barzu',

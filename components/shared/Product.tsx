@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import {
   Carousel,
@@ -10,7 +11,6 @@ import {
 } from '../ui/carousel';
 import { Card, CardContent } from '../ui/card';
 import { ProductPageType } from '@/lib/products';
-import Link from 'next/link';
 import { ProductType } from '@/lib/products';
 
 type ProductPageProp = {
