@@ -86,8 +86,9 @@ import {
   manGreyPoloshirt01,
   manGreyPoloshirt02,
   manGreyPoloshirt03,
-  manGreyTshirt01,
-  manGreyTshirt03,
+  manSlateTshirt01,
+  manSlateTshirt02,
+  manSlateTshirt03,
   manWhiteTshirt01,
   manWhiteTshirt02,
   manWhiteTshirt03,
@@ -449,9 +450,9 @@ export const productsMan: Array<ProductType> = [
   },
   {
     title: 'T-shirt',
-    color: 'Grey',
+    color: 'Slate',
     material: 'Cotton',
-    images: [manGreyTshirt01, manGreenTshirt02, manGreyTshirt03],
+    images: [manSlateTshirt01, manSlateTshirt02, manSlateTshirt03],
     canBeCustomized: true,
   },
   {

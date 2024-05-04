@@ -31,9 +31,9 @@ import manGreenZippedHoodie04 from './man-green-zipped-hoodie-04.jpg';
 import manGreyPoloshirt01 from './man-grey-poloshirt-01.jpg';
 import manGreyPoloshirt02 from './man-grey-poloshirt-02.jpg';
 import manGreyPoloshirt03 from './man-grey-poloshirt-03.jpg';
-import manGreyTshirt01 from './man-grey-tshirt-01.jpg';
-import manGreyTshirt02 from './man-grey-tshirt-02.jpg';
-import manGreyTshirt03 from './man-grey-tshirt-03.jpg';
+import manSlateTshirt01 from './man-slate-tshirt-01.jpg';
+import manSlateTshirt02 from './man-slate-tshirt-02.jpg';
+import manSlateTshirt03 from './man-slate-tshirt-03.jpg';
 import manWhiteTshirt01 from './man-white-tshirt-01.jpg';
 import manWhiteTshirt02 from './man-white-tshirt-02.jpg';
 import manWhiteTshirt03 from './man-white-tshirt-03.jpg';
@@ -75,9 +75,9 @@ export {
   manGreyPoloshirt01,
   manGreyPoloshirt02,
   manGreyPoloshirt03,
-  manGreyTshirt01,
-  manGreyTshirt02,
-  manGreyTshirt03,
+  manSlateTshirt01,
+  manSlateTshirt02,
+  manSlateTshirt03,
   manWhiteTshirt01,
   manWhiteTshirt02,
   manWhiteTshirt03,
