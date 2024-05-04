@@ -14,9 +14,9 @@ const MainMap: React.FC = ({}) => {
         mapboxAccessToken={mapboxToken}
         mapStyle='mapbox://styles/mapbox/streets-v12'
         initialViewState={{
-          latitude: 52.237049,
-          longitude: 21.017532,
-          zoom: 12,
+          latitude: 41.00744847573104,
+          longitude: 71.6572204734307,
+          zoom: 15,
         }}
         style={{
           width: '100%',
@@ -25,7 +25,7 @@ const MainMap: React.FC = ({}) => {
         maxZoom={20}
         minZoom={3}
       >
-        <Marker latitude={52.237049} longitude={21.017532}>
+        <Marker latitude={41.00744847573104} longitude={71.6572204734307}>
           <HiLocationMarker className='h-10 w-10 text-red-600 mb-5' />
         </Marker>
         <GeolocateControl position='top-right' />
