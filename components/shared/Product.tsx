@@ -9,8 +9,9 @@ import {
   CarouselItem,
 } from '../ui/carousel';
 import { Card, CardContent } from '../ui/card';
-import { ProductPageType, ProductType } from '@/lib/constants';
+import { ProductPageType } from '@/lib/products';
 import Link from 'next/link';
+import { ProductType } from '@/lib/products';
 
 type ProductPageProp = {
   productsData: Array<ProductPageType>;

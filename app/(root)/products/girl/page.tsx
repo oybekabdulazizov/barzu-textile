@@ -1,5 +1,5 @@
-import ProductContainer from '@/components/shared/Product';
-import { productsGirl } from '@/lib/constants';
+import { ProductContainer } from '@/components/shared/Product';
+import { productsGirl } from '@/lib/products';
 
 export default function Girl() {
   const title = 'For Girls';

@@ -1,5 +1,5 @@
 import { ProductContainer } from '@/components/shared/Product';
-import { productsMan } from '@/lib/constants';
+import { productsMan } from '@/lib/products';
 
 export default function page() {
   const title = 'For Men';
