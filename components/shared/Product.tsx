@@ -94,7 +94,7 @@ function ProductContainer({
                 <div className='w-full relative'>
                   <Carousel className='w-full'>
                     <CarouselChevronPrevious
-                      className='left-1 z-[1]'
+                      className='left-1 z-[1] text-primary-500'
                       variant='secondary'
                     />
                     <CarouselContent className='w-fit left-0 right-0'>
@@ -113,7 +113,7 @@ function ProductContainer({
                       ))}
                     </CarouselContent>
                     <CarouselChevronNext
-                      className='right-1 z-[1]'
+                      className='right-1 z-[1] text-primary-500'
                       variant='secondary'
                     />
                   </Carousel>

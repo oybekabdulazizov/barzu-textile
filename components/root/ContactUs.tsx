@@ -119,11 +119,7 @@ const ContactUs: React.FC = ({}) => {
                   </FormItem>
                 )}
               />
-              <Button
-                type='submit'
-                size={'lg'}
-                className='text-lg bg-green-500 hover:bg-green-600 w-full text-white'
-              >
+              <Button type='submit' className='w-full' variant='form'>
                 Submit
               </Button>
             </form>

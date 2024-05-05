@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Button } from '../ui/button';
 import { wardrobe01 } from '@/public/assets/images';
 
-const OurMission: React.FC = ({}) => {
+const OurMission: React.FC = () => {
   return (
     <div className='relative'>
       <div className='absolute z-10 bg-black bg-opacity-70 w-full min-h-[500px] md:max-h-[500px] flex items-center'>
@@ -19,13 +19,8 @@ const OurMission: React.FC = ({}) => {
             upholding the highest standards of sustainability and ethical
             business practices in every aspect of our operations.
           </p>
-          <Button className='p-0 mt-12 transition-all'>
-            <Link
-              href={'/products'}
-              className='px-6 py-2 border-2 border-slate-200 transition-all text-lg font-bold text-slate-200 hover:bg-slate-200 hover:text-primary-500'
-            >
-              See our products
-            </Link>
+          <Button className='mt-6 sm:mt-10 transition-all' variant='light'>
+            <Link href={'/products'}>See our products</Link>
           </Button>
         </div>
       </div>

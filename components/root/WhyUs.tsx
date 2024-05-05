@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '../ui/button';
 import { couple01 } from '@/public/assets/images';
 
-const WhyUs: React.FC = ({}) => {
+const WhyUs: React.FC = () => {
   return (
     <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14'>
       <Image
@@ -14,7 +14,7 @@ const WhyUs: React.FC = ({}) => {
         className='hidden md:inline p-0 w-full md:w-[300px] lg:w-[400px] transition-all'
         priority={true}
       />
-      <div>
+      <div className='flex flex-col'>
         <h2 className='font-extrabold text-2xl lg:text-3xl text-primary-500 pb-2'>
           Here's why we stand out:
         </h2>
@@ -38,13 +38,8 @@ const WhyUs: React.FC = ({}) => {
             flawless products.
           </li>
         </ul>
-        <Button className='p-0 mt-8 sm:mt-12 transition-all'>
-          <Link
-            href={'/about-us'}
-            className='px-6 py-2 border-2 border-primary-500 transition-all text-lg font-bold text-primary-500 hover:bg-primary-500 hover:text-slate-200'
-          >
-            More details
-          </Link>
+        <Button className='mt-6 md:mt-8'>
+          <Link href={'/about-us'}>More details</Link>
         </Button>
       </div>
     </div>
