@@ -53,14 +53,14 @@ const DesktopNavbar: React.FC = ({}) => {
                         </Link>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent
-                        className='bg-white border rounded-md'
+                        className='bg-white border rounded-none'
                       >
-                        <div className='text-primary-500 flex flex-col gap-2 p-3 w-56 rounded-md'>
+                        <div className='text-primary-500 flex flex-col gap-2 p-3 w-56'>
                           {item.routes?.map((route, idx) => (
                             <Link
                               href={route.route}
                               key={`${idx} - ${route.title}`}
-                              className='py-2 px-3 w-full hover:bg-gray-100 rounded-md'
+                              className='py-2 px-3 w-full hover:bg-gray-100 rounded-none'
                             >
                               {route.title}
                             </Link>
