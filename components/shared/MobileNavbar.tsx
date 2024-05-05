@@ -64,7 +64,7 @@ export default function MobileNavbar() {
       </div>
       <nav
         id='nav'
-        className={`fixed top-0 right-0 w-full sm:w-1/2 z-[2] h-full bg-primary-500 bg-opacity-50 transition-all transform duration-300 ${
+        className={`fixed top-0 right-0 w-full sm:w-1/2 z-[2] h-full bg-primary-500 bg-opacity-100 transition-all transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } shadow-lg md:hidden`}
       >
