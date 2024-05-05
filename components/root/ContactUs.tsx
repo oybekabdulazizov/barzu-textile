@@ -73,7 +73,7 @@ const ContactUs: React.FC = ({}) => {
                       <Input
                         placeholder='John Doe'
                         {...field}
-                        className='text-md border-gray-200 placeholder:text-gray-300'
+                        className='text-md border-gray-200 placeholder:text-gray-300 rounded-none'
                       />
                     </FormControl>
                     <FormMessage className='text-red-500' />
@@ -92,7 +92,7 @@ const ContactUs: React.FC = ({}) => {
                       <Input
                         placeholder='john.doe@mail.com'
                         {...field}
-                        className='text-md border-gray-200 placeholder:text-gray-300'
+                        className='text-md border-gray-200 placeholder:text-gray-300 rounded-none'
                       />
                     </FormControl>
                     <FormMessage className='text-red-500' />
@@ -112,7 +112,7 @@ const ContactUs: React.FC = ({}) => {
                         rows={6}
                         placeholder='We would like to work with you...'
                         {...field}
-                        className='text-md border-gray-200 placeholder:text-gray-300'
+                        className='text-md border-gray-200 placeholder:text-gray-300 rounded-none'
                       />
                     </FormControl>
                     <FormMessage className='text-red-500' />
