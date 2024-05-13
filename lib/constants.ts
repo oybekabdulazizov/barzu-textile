@@ -105,23 +105,25 @@ export const heroCarouselImages = [
 export const productionBriefItems = [
   {
     title: 'Production',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.`,
+    description: `Our production process is driven by efficiency and quality. 
+                  Equipped with the latest models of looms, we are able to produce 
+                  high volumes of textile products with precision and speed. 
+                  Our skilled workforce ensures that each product meets our rigorous standards, 
+                  delivering exceptional quality to our customers.`,
   },
   {
     title: 'Monitoring',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
+    description: `We prioritize quality control at every stage of production. 
+                  Our meticulous verification process ensures that defective products 
+                  are identified and addressed promptly. By monitoring each step closely, 
+                  we guarantee the delivery of flawless wholesale textile products to our customers.`,
   },
   {
     title: 'Packaging',
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.`,
+    description: `We understand the importance of presentation and ensure that 
+                  each product is marked and packaged with utmost care, 
+                  tailored to meet our customer's specific requirements. 
+                  Our meticulous approach to packaging guarantees that our wholesale 
+                  textile products arrive at their destination in perfect condition, ready to impress."`,
   },
 ];

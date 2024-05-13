@@ -17,9 +17,9 @@ const ProductionBriefInfo: React.FC = () => {
             </div>
           ))}
         </div>
-        <Button className='mt-6 sm:mt-12 transition-all'>
+        {/* <Button className='mt-6 sm:mt-12 transition-all'>
           <Link href={'/about-us'}>More details</Link>
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
