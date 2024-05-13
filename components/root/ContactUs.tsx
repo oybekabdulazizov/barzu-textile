@@ -16,7 +16,7 @@ import {
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
-import { contactus } from '@/public/assets/images';
+import { grayHoodie } from '@/public/assets/images';
 
 const formSchema = z.object({
   name: z
@@ -127,9 +127,9 @@ const ContactUs: React.FC = ({}) => {
         </div>
       </div>
       <Image
-        src={contactus}
-        alt=''
-        className='hidden md:inline w-full md:w-[300px] lg:w-[400px] transition-all'
+        src={grayHoodie}
+        alt='gray hoodie'
+        className='hidden md:inline w-full md:w-[340px] lg:w-[520px] transition-all'
         priority={true}
       />
     </div>

@@ -3,14 +3,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '../ui/button';
-import { couple01 } from '@/public/assets/images';
+import { modelGuyInHoodie } from '@/public/assets/images';
 
 const WhyUs: React.FC = () => {
   return (
     <div className='wrapper flex items-center justify-between flex-col md:flex-row gap-6 md:gap-10 lg:gap-14'>
       <Image
-        src={couple01}
-        alt='model couple'
+        src={modelGuyInHoodie}
+        alt='model guy in hoodie'
         className='hidden md:inline p-0 w-full md:w-[300px] lg:w-[400px] transition-all'
         priority={true}
       />
