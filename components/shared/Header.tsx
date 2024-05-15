@@ -9,9 +9,10 @@ const Header: React.FC = ({}) => {
       <div className='wrapper !py-1 sm:!py-4 flex items-center justify-between'>
         <Link
           href={'/'}
-          className='h-fit m-2 font-extrabold text-primary-500 text-2xl sm:text-4xl'
+          className='font-extrabold text-primary-500 flex flex-col items-center gap-0'
         >
-          Barzu
+          <h1 className='text-2xl sm:text-4xl !leading-none'>Barzu</h1>
+          <p className='text-xs sm:text-lg !leading-none'>Textile</p>
         </Link>
         <DesktopNavbar />
         <MobileNavbar />

@@ -8,9 +8,10 @@ const Footer: React.FC = ({}) => {
       <div className='wrapper !py-5 flex justify-between'>
         <Link
           href={'/'}
-          className='hidden sm:block h-fit m-2 font-extrabold text-slate-200 text-4xl'
+          className='hidden font-extrabold text-slate-200 sm:flex flex-col items-center'
         >
-          Barzu
+          <h1 className='text-4xl !leading-none'>Barzu</h1>
+          <p className='text-lg !leading-none'>Textile</p>
         </Link>
         <div className='flex justify-around sm:justify-end flex-row flex-wrap sm:flex-nowrap gap-8 md:gap-20 text-slate-200 w-full'>
           {navItems.slice(1).map((item, idx) => {
