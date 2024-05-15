@@ -60,7 +60,7 @@ export const navItems: Array<{
     ],
   },
   {
-    title: `Let's Work Together!`,
+    title: `Connect With Us`,
     route: '#contact-us',
     routes: [
       {
